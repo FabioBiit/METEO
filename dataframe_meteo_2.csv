@@ -1,0 +1,14 @@
+City,Temperature_C°,Temperature_Max_C°,Weather_description,Humidity_%,Wind_speed_m/s,Time
+Milan,13.66,15.65,fog,97,0.0,2024-10-29 08:51:36
+Bologna,15.41,17.94,clear sky,91,2.06,2024-10-29 08:51:36
+Cagliari,16.96,20.08,clear sky,90,2.06,2024-10-29 08:51:36
+Milan,9.26,10.65,mist,84,0.51,2024-11-18 14:24:14
+Bologna,11.2,12.57,mist,80,1.03,2024-11-18 14:24:14
+Cagliari,20.64,21.08,scattered clouds,60,5.66,2024-11-18 14:24:14
+Cagliari,20.28,20.88,broken clouds,60,5.14,2024-11-18 15:06:47
+Milan,9.22,10.44,mist,83,1.03,2024-11-18 15:08:05
+Bologna,11.22,13.35,mist,79,0.51,2024-11-18 15:08:05
+Cagliari,20.28,20.88,broken clouds,60,5.14,2024-11-18 15:08:05
+Milan,9.22,10.44,mist,83,1.03,2024-11-18 15:08:19
+Bologna,11.22,13.35,mist,79,0.51,2024-11-18 15:08:19
+Cagliari,20.28,20.88,broken clouds,60,5.14,2024-11-18 15:08:19
