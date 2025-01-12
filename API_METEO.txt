@@ -1,0 +1,3 @@
+https://api.openweathermap.org/data/2.5/weather?lat=45.27&lon=9.09&appid=d772ae99953d3504ba931841f8bd77da&units=metric
+
+https://api.openweathermap.org/data/2.5/weather?q=Milano&appid=d772ae99953d3504ba931841f8bd77da&units=metric
