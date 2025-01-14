@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 from datetime import datetime
 
+
 data_time_stamp = datetime.now().replace(microsecond=0)
 
 citta = ["milano", "bologna", "cagliari", "palermo", "napoli"]
