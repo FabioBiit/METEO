@@ -46,6 +46,6 @@ print(df_final)
 # Metodo per salvare in append su una tabella nel DB SQL di AZURE SYNAPSE
 # df_final.write.mode("append").synapsesql("nome_tab_SQL")
 
-df_final.to_csv("C:/Users/kyros/OneDrive/Desktop/dataframe_meteo_2.csv", mode='a', index=False, header=False) # Salvo il DF come CSV per simulare il save su DB
+df_final.to_csv("C:/Users/kyros/OneDrive/Desktop/METEO/STORICO/DataFrameMeteo.csv", mode='a', index=False, header=False) # Salvo il DF come CSV per simulare il save su DB
 
 # df_final.info()
