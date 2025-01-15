@@ -11,13 +11,14 @@ mese = data_time_stamp.month
 giorno = data_time_stamp.day
 
 # Definisci il percorso della directory
-folder_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/{giorno}")
+folder_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}")
 
-# Crea la cartella se non esiste
-if folder_path.mkdir(parents=True, exist_ok=True):
+# Verifica se la cartella esiste
+if not folder_path.exists():
+    folder_path.mkdir(parents=True, exist_ok=True)  # Crea la directory se non esiste
     print(f"Cartella creata: {folder_path}")
 else:
-    print(f"Cartella esistente: {folder_path}")
+    print(f"La cartella esiste già: {folder_path}")
 
 citta = ["milano", "bologna", "cagliari", "palermo", "napoli"]
 
@@ -51,20 +52,11 @@ for i, city in enumerate(citta):
     else:
         print("Failed to retrieve data from the API. Status code:", response.status_code)
 
-df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei 3 dataframe creati in precedenza in un unico DF
+df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 
 df_final['City'] =  df_final['City'].replace('Provincia di Cagliari', 'Cagliari')\
                                     .replace('Province of Palermo', 'Palermo')
 
 print(df_final)
 
-# Leggi il file Parquet esistente
-try:
-    df_esistente = pd.read_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/{giorno}/StoricoMeteo.parquet", engine="pyarrow")
-    df_finale = pd.concat([df_esistente, df_final], ignore_index=True)
-except FileNotFoundError:
-    # Se il file non esiste, usa solo i nuovi dati
-    df_finale = df_final
-
-# Salva il DataFrame aggiornato
-df_finale.to_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/{giorno}/StoricoMeteo.parquet", engine="pyarrow", compression="snappy")
+df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=False, index=False)
