@@ -1,13 +1,18 @@
 import subprocess
 
-def run_git_command(command):
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
+# Funzione per eseguire i seguenti comandi git:
+def git_command(cmd):
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if result.returncode == 0:
-        print(f"Successo: {result.stdout}")
+        print(f"Succeeded: {result.stdout}")
     else:
-        print(f"Errore: {result.stderr}")
+        print(f"Failed: {result.stderr}")
 
-run_git_command("git pull")
-run_git_command("git add .")
-run_git_command('git commit -m "Aggiornamenti automatici"')
-run_git_command("git push")
+try:
+    git_command("git pull")
+    git_command("git add .")
+    git_command('git commit -m "Aggiornamento repository"')
+    git_command("git push")
+
+except Exception as e:
+    print(f"Errore durante l'esecuzione: {e}")
