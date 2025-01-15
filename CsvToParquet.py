@@ -30,22 +30,6 @@ for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutti i file e l
         
         # Leggi il file CSV in un DataFrame
         df_pd = pd.read_csv(file_path)
-        
-        # Definisci lo schema dei dati (tipi di dato per ogni colonna)
-        schema_dati = {
-            'City': str,
-            'Temperature_C°': float,
-            'Temperature_Max_C°': float,
-            'Weather_description': str,
-            'Humidity_%': int,
-            'Wind_speed_m/s': float,
-            'Time': str  # timestamp come stringa per semplicità
-        }
-        
-        # Applica il tipo di dato solo alle colonne esistenti nel DataFrame
-        for column, dtype in schema_dati.items():
-            if column in df_pd.columns:
-                df_pd[column] = df_pd[column].astype(dtype, errors='ignore')  # Ignora errori se la colonna non esiste
 
         # Aggiungi il DataFrame al dizionario con una chiave unica
         dataframe[f"df_{i+1}"] = df_pd

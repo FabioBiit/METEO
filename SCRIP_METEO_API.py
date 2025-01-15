@@ -59,4 +59,9 @@ df_final['City'] =  df_final['City'].replace('Provincia di Cagliari', 'Cagliari'
 
 print(df_final)
 
-df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=False, index=False)
+file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
+
+if not file_path.is_file() and file_path.suffix == '.csv': 
+    df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=True, index=False)
+else:
+    df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=False, index=False)
