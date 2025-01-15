@@ -20,7 +20,21 @@ if not folder_path.exists():
 else:
     print(f"La cartella esiste già: {folder_path}")
 
-citta = ["milano", "bologna", "cagliari", "palermo", "napoli"]
+citta = [
+    "palermo", 
+    "catania", 
+    "cagliari",
+    "sassari",
+    "bari",
+    "lecce",
+    "napoli",
+    "roma", 
+    "milano",
+    "bologna",
+    "firenze",
+    "genova", 
+    "torino"
+    ]
 
 dataframe = {} # Diz per lo storage dei 3 dataframe
 
@@ -39,6 +53,7 @@ for i, city in enumerate(citta):
         dati = {
             'City' :  data['name'],
             'Temperature_C°' : data['main']['temp'],
+            'Temperature_Min_C°' : data['main']['temp_min'],
             'Temperature_Max_C°' : data['main']['temp_max'],
             'Weather_description' : data['weather'][0]['description'],
             'Humidity_%' : data['main']['humidity'],
@@ -54,10 +69,9 @@ for i, city in enumerate(citta):
 
 df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 
-df_final['City'] =  df_final['City'].replace('Provincia di Cagliari', 'Cagliari')\
-                                    .replace('Province of Palermo', 'Palermo')
+df_final['City'] =  df_final['City'].replace('Provincia di ', '')
 
-# print(df_final)
+print(df_final)
 
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
 
