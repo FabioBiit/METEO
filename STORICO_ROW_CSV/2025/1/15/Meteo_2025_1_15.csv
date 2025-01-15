@@ -1,94 +1,14 @@
 City,Temperature_C°,Temperature_Min_C°,Temperature_Max_C°,Weather_description,Humidity_%,Wind_speed_m/s,Time
-Milan,3.94,1.87,5.01,clear sky,71,2.06,2025-01-15 17:44:57
-Bologna,4.78,3.85,5.5,clear sky,65,0.51,2025-01-15 17:44:57
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:44:57
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:44:57
-Naples,8.4,8.34,8.9,scattered clouds,61,3.09,2025-01-15 17:44:57
-Milan,3.94,1.87,5.01,clear sky,71,2.06,2025-01-15 17:45:02
-Bologna,4.78,3.85,5.5,clear sky,65,0.51,2025-01-15 17:45:02
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:45:02
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:45:02
-Naples,8.4,8.34,8.9,scattered clouds,61,3.09,2025-01-15 17:45:02
-Milan,3.94,1.87,5.01,clear sky,71,2.06,2025-01-15 17:48:57
-Bologna,4.78,3.85,5.5,clear sky,65,0.51,2025-01-15 17:48:57
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:48:57
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:48:57
-Naples,8.4,8.34,8.9,scattered clouds,61,3.09,2025-01-15 17:48:57
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:53:01
-Catania,11.86,11.04,12.0,broken clouds,81,1.03,2025-01-15 17:53:01
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:53:01
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 17:53:01
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 17:53:01
-Provincia di Lecce,7.94,7.94,8.25,few clouds,81,2.06,2025-01-15 17:53:01
-Naples,8.4,8.11,8.9,scattered clouds,62,3.09,2025-01-15 17:53:01
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 17:53:01
-Milan,3.57,2.3,4.37,clear sky,72,2.06,2025-01-15 17:53:01
-Bologna,4.52,3.85,5.5,clear sky,67,0.51,2025-01-15 17:53:01
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 17:53:01
-Provincia di Genova,2.36,1.83,3.75,few clouds,94,2.34,2025-01-15 17:53:01
-Province of Turin,0.69,0.07,2.35,clear sky,58,1.54,2025-01-15 17:53:01
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:53:11
-Catania,11.86,11.04,12.0,broken clouds,81,1.03,2025-01-15 17:53:11
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:53:11
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 17:53:11
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 17:53:11
-Provincia di Lecce,7.94,7.94,8.25,few clouds,81,2.06,2025-01-15 17:53:11
-Naples,8.4,8.11,8.9,scattered clouds,62,3.09,2025-01-15 17:53:11
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 17:53:11
-Milan,3.57,2.3,4.37,clear sky,72,2.06,2025-01-15 17:53:11
-Bologna,4.52,3.85,5.5,clear sky,67,0.51,2025-01-15 17:53:11
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 17:53:11
-Provincia di Genova,2.36,1.83,3.75,few clouds,94,2.34,2025-01-15 17:53:11
-Province of Turin,0.69,0.07,2.35,clear sky,58,1.54,2025-01-15 17:53:11
-Palermo,6.99,6.99,7.11,broken clouds,89,0.76,2025-01-15 17:53:31
-Catania,11.86,11.04,12.0,broken clouds,81,1.03,2025-01-15 17:53:31
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 17:53:31
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 17:53:31
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 17:53:31
-Provincia di Lecce,7.94,7.94,8.25,few clouds,81,2.06,2025-01-15 17:53:31
-Naples,8.4,8.11,8.9,scattered clouds,62,3.09,2025-01-15 17:53:31
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 17:53:31
-Milan,3.57,2.3,4.37,clear sky,72,2.06,2025-01-15 17:53:31
-Bologna,4.52,3.85,5.5,clear sky,67,0.51,2025-01-15 17:53:31
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 17:53:31
-Provincia di Genova,2.36,1.83,3.75,few clouds,94,2.34,2025-01-15 17:53:31
-Province of Turin,0.69,0.07,2.35,clear sky,58,1.54,2025-01-15 17:53:31
-Palermo,6.99,6.56,6.99,broken clouds,90,0.76,2025-01-15 18:00:02
-Catania,11.85,10.48,12.0,broken clouds,81,1.03,2025-01-15 18:00:02
-Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 18:00:02
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 18:00:02
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 18:00:02
-Provincia di Lecce,7.94,7.7,7.94,few clouds,81,2.06,2025-01-15 18:00:02
-Naples,8.25,7.84,8.9,scattered clouds,62,3.09,2025-01-15 18:00:02
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 18:00:02
-Milan,3.57,2.3,4.37,clear sky,72,2.06,2025-01-15 18:00:02
-Bologna,4.36,3.85,5.5,clear sky,67,0.51,2025-01-15 18:00:02
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 18:00:02
-Provincia di Genova,2.62,1.83,3.75,few clouds,89,0.45,2025-01-15 18:00:02
-Province of Turin,0.02,-0.49,2.27,clear sky,64,1.36,2025-01-15 18:00:02
-Province of Palermo,6.99,6.56,6.99,broken clouds,90,0.76,2025-01-15 18:04:07
-Catania,11.85,10.48,12.0,broken clouds,81,1.03,2025-01-15 18:04:07
-Provincia di Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 18:04:07
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 18:04:07
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 18:04:07
-Provincia di Lecce,7.94,7.7,7.94,few clouds,81,2.06,2025-01-15 18:04:07
-Naples,8.25,7.84,8.9,scattered clouds,62,3.09,2025-01-15 18:04:07
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 18:04:07
-Milan,3.26,1.75,4.43,clear sky,74,2.06,2025-01-15 18:04:07
-Bologna,4.36,3.85,5.5,clear sky,67,0.51,2025-01-15 18:04:07
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 18:04:07
-Provincia di Genova,2.62,1.83,3.75,few clouds,89,0.45,2025-01-15 18:04:07
-Province of Turin,0.02,-0.49,2.27,clear sky,64,1.36,2025-01-15 18:04:07
-Province of Palermo,6.99,6.56,6.99,broken clouds,90,0.76,2025-01-15 18:04:22
-Catania,11.85,10.48,12.0,broken clouds,81,1.03,2025-01-15 18:04:22
-Provincia di Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-15 18:04:22
-Sassari,8.88,8.27,8.88,broken clouds,80,1.4,2025-01-15 18:04:22
-Bari,6.54,6.19,7.25,few clouds,75,3.6,2025-01-15 18:04:22
-Provincia di Lecce,7.94,7.7,7.94,few clouds,81,2.06,2025-01-15 18:04:22
-Naples,8.25,7.84,8.9,scattered clouds,62,3.09,2025-01-15 18:04:22
-Rome,-5.27,-6.15,-4.79,broken clouds,78,3.13,2025-01-15 18:04:22
-Milan,3.26,1.75,4.43,clear sky,74,2.06,2025-01-15 18:04:22
-Bologna,4.36,3.85,5.5,clear sky,67,0.51,2025-01-15 18:04:22
-Florence,7.59,4.29,8.36,few clouds,36,3.58,2025-01-15 18:04:22
-Provincia di Genova,2.62,1.83,3.75,few clouds,89,0.45,2025-01-15 18:04:22
-Province of Turin,0.02,-0.49,2.27,clear sky,64,1.36,2025-01-15 18:04:22
+Palermo,6.99,6.56,6.99,broken clouds,90,0.76,2025-01-15 18:18:57
+Catania,11.08,9.85,11.97,broken clouds,84,2.06,2025-01-15 18:18:57
+Cagliari,9.78,8.88,11.06,few clouds,53,2.57,2025-01-15 18:18:57
+Sassari,7.88,7.88,8.27,broken clouds,80,1.4,2025-01-15 18:18:57
+Bari,6.37,5.75,6.81,few clouds,76,3.09,2025-01-15 18:18:57
+Lecce,7.7,7.7,7.7,broken clouds,81,3.49,2025-01-15 18:18:57
+Naples,8.07,7.84,8.34,broken clouds,62,3.6,2025-01-15 18:18:57
+Rome,-5.18,-5.91,-4.79,broken clouds,75,3.13,2025-01-15 18:18:57
+Milan,3.5,1.91,4.45,clear sky,73,2.06,2025-01-15 18:18:57
+Bologna,3.89,2.85,5.5,clear sky,69,1.03,2025-01-15 18:18:57
+Florence,6.82,4.29,8.36,clear sky,38,1.54,2025-01-15 18:18:57
+Genova,2.62,1.83,3.75,few clouds,89,2.34,2025-01-15 18:18:57
+Turin,-0.02,-0.49,1.72,clear sky,64,1.36,2025-01-15 18:18:57

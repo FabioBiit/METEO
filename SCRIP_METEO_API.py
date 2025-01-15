@@ -10,6 +10,14 @@ anno = data_time_stamp.year
 mese = data_time_stamp.month
 giorno = data_time_stamp.day
 
+# Funzione per modificare solo le città che contengono "Provincia" o "Province"
+def clean_city_name(city):
+    if pd.notna(city) and ('Provincia' in city or 'Province' in city):
+        parts = city.split(' ')
+        if len(parts) > 2:  # Assicurati che ci sia una terza parte disponibile
+            return parts[2]
+    return city
+
 # Definisci il percorso della directory
 folder_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}")
 
@@ -69,7 +77,8 @@ for i, city in enumerate(citta):
 
 df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 
-df_final['City'] =  df_final['City'].replace('Provincia di ', '')
+# Applica la funzione alla colonna 'City'
+df_final['City'] = df_final['City'].apply(clean_city_name)
 
 print(df_final)
 
