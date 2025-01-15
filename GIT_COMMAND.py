@@ -1,4 +1,8 @@
+import os
 import subprocess
+
+# Cambia directory nel repository Git
+os.chdir("C:/Users/kyros/OneDrive/Desktop/METEO/")
 
 # Funzione per eseguire i seguenti comandi git:
 def git_command(cmd):
