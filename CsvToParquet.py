@@ -24,7 +24,7 @@ root_dir = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{
 dataframe = {} # Diz per lo storage
 
 # Itera attraverso tutte le sotto-cartelle e i file
-for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutti i file e le cartelle
+for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutte le cartelle i file in esse contenuti
     if file_path.is_file() and file_path.suffix == '.csv':  # Verifica che sia un file CSV
         print(f"Caricando il file: {file_path}")
         
