@@ -1,0 +1,20 @@
+#### TASK METEO ####
+
+--Attività--
+
+Operazioni: Avvio Programma
+
+Programma: C:\Users\kyros\AppData\Local\Programs\Python\Python312\python.exe
+
+Argomenti: C:\Users\kyros\OneDrive\Desktop\METEO\SCRIP_METEO_API.py
+
+#### TASK GIT ####
+
+--Attività--
+
+Operazioni: Avvio Programma
+
+Programma: C:\Users\kyros\AppData\Local\Programs\Python\Python312\python.exe
+
+Argomenti: C:\Users\kyros\OneDrive\Desktop\METEO\GIT_COMMAND.py
+
