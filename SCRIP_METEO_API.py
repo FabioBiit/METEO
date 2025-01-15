@@ -57,7 +57,7 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 df_final['City'] =  df_final['City'].replace('Provincia di Cagliari', 'Cagliari')\
                                     .replace('Province of Palermo', 'Palermo')
 
-print(df_final)
+# print(df_final)
 
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
 

@@ -11,6 +11,6 @@ giorno = data_time_stamp.day
 
 df = pd.read_parquet(f'C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/StoricoMeteo_{anno}_{mese}.parquet', engine='pyarrow')
 
-df.info()
+# df.info()
 
 print(df)
