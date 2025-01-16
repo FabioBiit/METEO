@@ -1,6 +1,4 @@
 import pandas as pd
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, when, regexp_replace
 
 from pathlib import Path
 from datetime import datetime
@@ -42,6 +40,9 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 df_final.to_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/StoricoMeteo_{anno}_{mese}.parquet", engine="pyarrow", compression="snappy")
 
 """
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, when, regexp_replace
+
 # Creare una sessione Spark
 spark = SparkSession.builder \
     .appName("MeteoSpark") \
