@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import numpy as np
 
 from pathlib import Path
 from datetime import datetime
@@ -60,9 +61,9 @@ for i, city in enumerate(citta):
         # Estraggo i dati ritenuti rilevanti
         dati = {
             'City' :  data['name'],
-            'Temperature_C°' : data['main']['temp'],
-            'Temperature_Min_C°' : data['main']['temp_min'],
-            'Temperature_Max_C°' : data['main']['temp_max'],
+            'Temperature_C' : data['main']['temp'],
+            'Temperature_Min_C' : data['main']['temp_min'],
+            'Temperature_Max_C' : data['main']['temp_max'],
             'Weather_description' : data['weather'][0]['description'],
             'Humidity_%' : data['main']['humidity'],
             'Wind_speed_m/s' : data['wind']['speed'],
@@ -80,11 +81,20 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 # Applica la funzione alla colonna 'City'
 df_final['City'] = df_final['City'].apply(clean_city_name)
 
+df_final = df_final['City'].astype(str)
+
+df_final.info()
+
+df_final = np.where((df_final['City'] == 'Roma') & (df_final['Temperature_C'] < 0) & (df_final['Temperature_C'].astype(str)), \
+                     df_final['Temperature_C'].str.replace('-', ''), df_final['Temperature_C'])
+
 print(df_final)
 
+"""
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
 
 if not file_path.is_file() and file_path.suffix == '.csv': 
     df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=True, index=False)
 else:
     df_final.to_csv(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv", mode='a', header=False, index=False)
+"""

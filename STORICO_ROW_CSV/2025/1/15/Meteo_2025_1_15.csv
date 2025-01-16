@@ -1,4 +1,4 @@
-City,Temperature_C°,Temperature_Min_C°,Temperature_Max_C°,Weather_description,Humidity_%,Wind_speed_m/s,Time
+City,Temperature_C,Temperature_Min_C,Temperature_Max_C,Weather_description,Humidity_%,Wind_speed_m/s,Time
 Palermo,6.99,6.56,6.99,broken clouds,90,0.76,2025-01-15 18:18:57
 Catania,11.08,9.85,11.97,broken clouds,84,2.06,2025-01-15 18:18:57
 Cagliari,9.78,8.88,11.06,few clouds,53,2.57,2025-01-15 18:18:57

@@ -1,4 +1,4 @@
-City,Temperature_C°,Temperature_Min_C°,Temperature_Max_C°,Weather_description,Humidity_%,Wind_speed_m/s,Time
+City,Temperature_C,Temperature_Min_C,Temperature_Max_C,Weather_description,Humidity_%,Wind_speed_m/s,Time
 Milan,3.94,1.87,5.01,clear sky,71,2.06,2025-01-14 16:44:57
 Bologna,4.78,3.85,5.5,clear sky,65,0.51,2025-01-14 16:44:57
 Cagliari,10.52,9.88,11.06,few clouds,49,3.09,2025-01-14 16:44:57
