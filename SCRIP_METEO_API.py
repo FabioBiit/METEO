@@ -1,6 +1,8 @@
 import requests
 import pandas as pd
-import numpy as np
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import when, col
+
 
 from pathlib import Path
 from datetime import datetime
@@ -81,14 +83,20 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 # Applica la funzione alla colonna 'City'
 df_final['City'] = df_final['City'].apply(clean_city_name)
 
-df_final = df_final['City'].astype(str)
+# Creare una sessione Spark
+spark = SparkSession.builder \
+    .appName("MeteoSpark") \
+    .getOrCreate()
 
-df_final.info()
+# Converti il DataFrame in un DataFrame Spark
+df_spark = spark.createDataFrame(df_final)
 
-df_final = np.where((df_final['City'] == 'Roma') & (df_final['Temperature_C'] < 0) & (df_final['Temperature_C'].astype(str)), \
-                     df_final['Temperature_C'].str.replace('-', ''), df_final['Temperature_C'])
+df_spark = df_spark.withColumn("Temperature_C", when ( (col("City") == 'Roma') & (col('Temperature_C') < 0) , 'Temperature_C'.cast(str).replace('-', '') ) 
+                               .otherwise(col('Temperature_C') ) )
 
-print(df_final)
+df_spark.show()
+
+
 
 """
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
