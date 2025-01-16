@@ -1,4 +1,6 @@
 import pandas as pd
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, when, regexp_replace
 
 from pathlib import Path
 from datetime import datetime
@@ -38,3 +40,24 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 
 # Salva il DataFrame aggiornato
 df_final.to_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/StoricoMeteo_{anno}_{mese}.parquet", engine="pyarrow", compression="snappy")
+
+"""
+# Creare una sessione Spark
+spark = SparkSession.builder \
+    .appName("MeteoSpark") \
+    .getOrCreate()
+
+# Converti il DataFrame in un DataFrame Spark
+df_spark = spark.createDataFrame(df_final)
+
+df_spark = df_spark.withColumn(
+    "Temperature_C",
+    when( (col("City") == 'Rome') & (col("Temperature_C") < 0),
+        regexp_replace(col('Temperature_C').cast("string"), '-', '').cast("double")).otherwise(col('Temperature_C')))\
+    .withColumn("Temperature_Min_C", when( (col("City") == 'Rome') & (col("Temperature_Min_C") < 0),
+        regexp_replace(col('Temperature_Min_C').cast("string"), '-', '').cast("double")).otherwise(col("Temperature_Min_C")))\
+    .withColumn("Temperature_Max_C", when( (col("City") == 'Rome') & (col("Temperature_Max_C") < 0),
+        regexp_replace(col('Temperature_Max_C').cast("string"), '-', '').cast("double")).otherwise(col("Temperature_Min_C")))
+"""
+
+# df_spark.show()
