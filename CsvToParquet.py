@@ -29,19 +29,17 @@ for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutte le cartell
         print(f"Caricando il file: {file_path}")
         
         # Leggi il file CSV in un DataFrame
-        df_pd = pd.read_csv(file_path)
+        df_pd = pd.read_csv(file_path, low_memory=False)
 
         # Aggiungi il DataFrame al dizionario con una chiave unica
         dataframe[f"df_{i+1}"] = df_pd
 
 df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 
-df_final = df_final[df_final['City'] != 'Rome']
-
 print(df_final)
 
 # Salva il DataFrame aggiornato
-# df_final.to_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/StoricoMeteo_{anno}_{mese}.parquet", engine="pyarrow", compression="snappy")
+df_final.to_parquet(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_PARQUET/{anno}/{mese}/StoricoMeteo_{anno}_{mese}.parquet", engine="pyarrow", compression="snappy")
 
 """
 from pyspark.sql import SparkSession

@@ -66,7 +66,8 @@ for i, city in enumerate(citta):
             'Weather_description' : data['weather'][0]['description'],
             'Humidity_%' : data['main']['humidity'],
             'Wind_speed_m/s' : data['wind']['speed'],
-            'Time' : data_time_stamp
+            'Time' : data_time_stamp, 
+            'Country' : data['sys']['country'] == 'IT'
         }
     
         df_pd = pd.DataFrame([dati])
@@ -80,7 +81,8 @@ df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione de
 # Applica la funzione alla colonna 'City'
 df_final['City'] = df_final['City'].apply(clean_city_name)
 
-# print(df_final)
+print(df_final)
+
 
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
 
