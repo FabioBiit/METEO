@@ -36,7 +36,7 @@ citta = [
     "bari",
     "lecce",
     "napoli",
-    "roma", 
+    "provincia di roma", 
     "milano",
     "bologna",
     "firenze",
