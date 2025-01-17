@@ -15,7 +15,7 @@ def git_command(cmd):
 try:
     git_command("git pull")
     git_command("git add .")
-    git_command('git commit -m "Aggiornamento repository"')
+    git_command('git commit -m "Aggiornamenti vari"')
     git_command("git push")
 
 except Exception as e:
