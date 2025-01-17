@@ -53,10 +53,10 @@ for i, city in enumerate(citta):
     response = requests.get(citta_str)
 
     # Verificare che la richiesta sia andata a buon fine
-    if response.status_code == 200:
+    if response.status_code == 200 and response.json()['sys']['country'] == 'IT':
         # Ottenere i dati in formato JSON
         data = response.json()
-        
+
         # Estraggo i dati ritenuti rilevanti
         dati = {
             'City' :  data['name'],
@@ -66,8 +66,7 @@ for i, city in enumerate(citta):
             'Weather_description' : data['weather'][0]['description'],
             'Humidity_%' : data['main']['humidity'],
             'Wind_speed_m/s' : data['wind']['speed'],
-            'Time' : data_time_stamp, 
-            'Country' : data['sys']['country'] == 'IT'
+            'Time' : data_time_stamp
         }
     
         df_pd = pd.DataFrame([dati])
