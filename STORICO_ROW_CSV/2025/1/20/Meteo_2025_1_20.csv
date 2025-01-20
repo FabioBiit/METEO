@@ -1,0 +1,27 @@
+City,Temperature_C,Temperature_Min_C,Temperature_Max_C,Weather_description,Humidity_%,Wind_speed_m/s,Time
+Palermo,8.1,8.1,8.1,scattered clouds,92,2.18,2025-01-20 06:54:29
+Catania,10.73,9.29,11.93,mist,91,3.58,2025-01-20 06:54:29
+Cagliari,8.68,8.05,8.84,scattered clouds,81,1.03,2025-01-20 06:54:29
+Sassari,9.88,9.88,9.93,overcast clouds,94,2.95,2025-01-20 06:54:29
+Bari,9.71,9.19,10.14,scattered clouds,89,1.54,2025-01-20 06:54:29
+Lecce,11.94,11.94,12.14,light rain,94,2.06,2025-01-20 06:54:29
+Naples,9.53,8.95,10.34,broken clouds,86,2.57,2025-01-20 06:54:29
+Rome,8.93,8.06,9.74,clear sky,86,1.54,2025-01-20 06:54:29
+Milan,5.84,4.72,6.19,broken clouds,91,1.54,2025-01-20 06:54:29
+Bologna,5.39,4.58,6.47,drizzle,91,0.51,2025-01-20 06:54:29
+Florence,7.18,6.82,8.45,light intensity drizzle,85,0.51,2025-01-20 06:54:29
+Genova,3.31,2.27,4.43,light rain,81,3.58,2025-01-20 06:54:29
+Turin,0.39,0.07,2.83,light snow,94,1.96,2025-01-20 06:54:29
+Palermo,8.1,8.1,8.1,scattered clouds,92,2.26,2025-01-20 07:00:04
+Catania,10.73,9.29,11.93,mist,91,3.58,2025-01-20 07:00:04
+Cagliari,8.68,8.05,8.84,scattered clouds,81,1.03,2025-01-20 07:00:04
+Sassari,9.88,9.88,9.93,broken clouds,95,2.93,2025-01-20 07:00:04
+Bari,9.71,9.19,10.14,scattered clouds,89,1.54,2025-01-20 07:00:04
+Lecce,11.94,11.94,12.14,light rain,94,2.06,2025-01-20 07:00:04
+Naples,9.53,8.95,10.34,broken clouds,86,2.57,2025-01-20 07:00:04
+Rome,8.93,8.06,9.74,clear sky,85,1.54,2025-01-20 07:00:04
+Milan,5.84,4.72,6.19,broken clouds,91,1.54,2025-01-20 07:00:04
+Bologna,5.39,4.58,6.47,drizzle,91,0.51,2025-01-20 07:00:04
+Florence,7.18,6.82,8.45,light intensity drizzle,85,0.51,2025-01-20 07:00:04
+Genova,3.31,2.27,4.43,light rain,81,3.58,2025-01-20 07:00:04
+Turin,0.39,0.07,2.83,light snow,94,1.33,2025-01-20 07:00:04
