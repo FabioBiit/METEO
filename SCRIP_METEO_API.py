@@ -44,7 +44,7 @@ citta = [
     "torino"
     ]
 
-dataframe = [] # Storage temp dei dataframe
+dataframe = {} # Dizionario per i dataframe
 
 for i, city in enumerate(citta):
 
@@ -70,7 +70,7 @@ for i, city in enumerate(citta):
         }
     
         df_pd = pd.DataFrame([dati])
-        dataframe.append(df_pd)
+        dataframe[f'df_{i+1}'] = df_pd
 
     else:
         print("Failed to retrieve data from the API. Status code:", response.status_code)
