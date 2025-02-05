@@ -1,0 +1,14 @@
+City,Temperature_C,Temperature_Min_C,Temperature_Max_C,Weather_description,Humidity_%,Wind_speed_m/s,Time
+Palermo,5.87,5.87,5.87,scattered clouds,89,1.22,2025-02-06 00:00:02
+Catania,12.91,11.04,13.04,broken clouds,77,1.54,2025-02-06 00:00:02
+Cagliari,10.2,8.05,11.62,clear sky,76,2.06,2025-02-06 00:00:02
+Sassari,6.88,6.88,9.38,overcast clouds,59,2.48,2025-02-06 00:00:02
+Bari,7.17,6.3,7.71,clear sky,85,3.6,2025-02-06 00:00:02
+Lecce,4.94,4.94,7.7,clear sky,93,1.54,2025-02-06 00:00:02
+Naples,7.52,7.29,8.66,clear sky,59,3.09,2025-02-06 00:00:02
+Rome,6.66,5.52,9.29,clear sky,82,2.06,2025-02-06 00:00:02
+Milan,4.94,3.82,6.12,clear sky,90,1.35,2025-02-06 00:00:02
+Bologna,2.89,2.8,4.37,broken clouds,89,2.57,2025-02-06 00:00:02
+Florence,5.79,5.59,8.39,clear sky,55,2.06,2025-02-06 00:00:02
+Genova,6.08,4.65,7.83,clear sky,48,3.39,2025-02-06 00:00:02
+Turin,0.58,0.18,2.83,clear sky,58,3.6,2025-02-06 00:00:02
