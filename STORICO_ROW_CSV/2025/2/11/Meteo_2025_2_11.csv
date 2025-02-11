@@ -1,0 +1,27 @@
+City,Temperature_C,Temperature_Min_C,Temperature_Max_C,Weather_description,Humidity_%,Wind_speed_m/s,Time
+Palermo,8.1,8.1,8.1,broken clouds,86,0.38,2025-02-11 08:45:04
+Catania,10.03,6.88,11.93,clear sky,83,4.02,2025-02-11 08:45:04
+Cagliari,11.54,11.06,12.15,few clouds,76,2.57,2025-02-11 08:45:04
+Sassari,5.88,5.88,5.88,overcast clouds,78,1.87,2025-02-11 08:45:04
+Bari,7.19,7.19,9.59,clear sky,81,2.57,2025-02-11 08:45:04
+Lecce,6.94,6.94,9.92,scattered clouds,100,1.54,2025-02-11 08:45:04
+Naples,7.98,7.34,10.33,clear sky,81,2.06,2025-02-11 08:45:04
+Rome,7.86,7.18,10.23,few clouds,94,0.51,2025-02-11 08:45:04
+Milan,7.46,5.99,8.34,mist,92,1.54,2025-02-11 08:45:04
+Bologna,7.79,6.81,7.81,broken clouds,93,1.03,2025-02-11 08:45:04
+Florence,9.7,8.72,10.67,broken clouds,93,0.51,2025-02-11 08:45:04
+Genova,6.14,4.05,7.81,overcast clouds,84,0.45,2025-02-11 08:45:04
+Turin,2.29,1.85,4.84,overcast clouds,91,0.37,2025-02-11 08:45:04
+Palermo,9.21,6.56,9.21,broken clouds,86,0.38,2025-02-11 09:00:04
+Catania,10.68,6.88,12.4,clear sky,81,4.02,2025-02-11 09:00:04
+Cagliari,11.77,11.62,12.71,few clouds,76,2.57,2025-02-11 09:00:04
+Sassari,5.88,5.88,5.88,overcast clouds,78,1.87,2025-02-11 09:00:04
+Bari,8.73,8.52,11.25,overcast clouds,78,1.11,2025-02-11 09:00:04
+Lecce,6.94,6.94,11.03,scattered clouds,100,1.54,2025-02-11 09:00:04
+Naples,8.49,7.34,10.33,clear sky,80,2.06,2025-02-11 09:00:04
+Rome,8.62,8.06,10.4,few clouds,93,0.51,2025-02-11 09:00:04
+Milan,7.46,5.99,8.34,mist,92,1.54,2025-02-11 09:00:04
+Bologna,7.79,6.81,7.81,broken clouds,93,1.03,2025-02-11 09:00:04
+Florence,9.72,8.72,10.67,broken clouds,93,0.51,2025-02-11 09:00:04
+Genova,6.14,4.05,7.81,overcast clouds,84,1.3,2025-02-11 09:00:04
+Turin,2.29,1.85,4.84,overcast clouds,91,0.37,2025-02-11 09:00:04
