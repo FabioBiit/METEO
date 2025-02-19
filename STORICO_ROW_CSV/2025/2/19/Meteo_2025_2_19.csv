@@ -428,3 +428,55 @@ Bologna,5.81,5.58,6.85,broken clouds,66,2.57,2025-02-19 16:00:05
 Florence,7.59,6.22,7.81,overcast clouds,70,0.89,2025-02-19 16:00:05
 Genova,2.66,1.14,5.35,overcast clouds,62,3.13,2025-02-19 16:00:05
 Turin,-0.12,-0.49,1.16,broken clouds,75,2.57,2025-02-19 16:00:05
+Palermo,14.21,14.21,14.34,overcast clouds,73,1.4,2025-02-19 16:15:02
+Catania,13.39,11.85,13.88,broken clouds,82,3.09,2025-02-19 16:15:02
+Cagliari,15.95,15.88,16.6,few clouds,71,5.14,2025-02-19 16:15:02
+Sassari,15.88,15.88,15.88,overcast clouds,60,2.04,2025-02-19 16:15:02
+Bari,10.57,9.93,11.25,scattered clouds,62,3.58,2025-02-19 16:15:02
+Lecce,10.48,10.48,10.48,clear sky,64,6.24,2025-02-19 16:15:02
+Naples,14.39,14.34,14.58,scattered clouds,50,1.54,2025-02-19 16:15:02
+Rome,8.43,7.74,11.96,drizzle,87,2.57,2025-02-19 16:15:02
+Milan,5.6,5.37,6.19,overcast clouds,65,2.24,2025-02-19 16:15:02
+Bologna,5.81,5.58,6.85,broken clouds,67,2.57,2025-02-19 16:15:02
+Florence,7.52,4.9,7.82,broken clouds,66,1.54,2025-02-19 16:15:02
+Genova,2.69,1.14,5.35,overcast clouds,62,3.58,2025-02-19 16:15:02
+Turin,-0.21,-0.49,0.95,overcast clouds,77,1.46,2025-02-19 16:15:02
+Palermo,14.21,14.21,14.34,overcast clouds,73,1.52,2025-02-19 16:30:02
+Catania,12.53,10.96,13.88,broken clouds,88,3.09,2025-02-19 16:30:02
+Cagliari,15.97,15.88,17.05,few clouds,72,6.69,2025-02-19 16:30:02
+Sassari,15.88,15.88,18.27,overcast clouds,69,1.55,2025-02-19 16:30:02
+Bari,10.43,9.93,11.19,scattered clouds,62,3.58,2025-02-19 16:30:02
+Lecce,9.94,9.94,10.48,scattered clouds,62,4.63,2025-02-19 16:30:02
+Naples,14.31,13.11,14.58,scattered clouds,54,1.54,2025-02-19 16:30:02
+Rome,10.27,8.4,11.96,light intensity drizzle,86,3.09,2025-02-19 16:30:02
+Milan,5.63,5.08,6.19,overcast clouds,65,2.06,2025-02-19 16:30:02
+Bologna,5.81,5.58,6.85,broken clouds,66,2.57,2025-02-19 16:30:02
+Florence,7.31,4.9,7.82,broken clouds,68,1.54,2025-02-19 16:30:02
+Genova,2.75,1.14,5.35,overcast clouds,62,4.47,2025-02-19 16:30:02
+Turin,-0.14,-0.49,1.02,broken clouds,73,1.54,2025-02-19 16:30:02
+Palermo,13.22,13.22,13.22,overcast clouds,83,1.52,2025-02-19 16:45:02
+Catania,12.37,10.96,13.88,broken clouds,89,3.6,2025-02-19 16:45:02
+Cagliari,15.97,15.88,17.05,few clouds,72,6.69,2025-02-19 16:45:02
+Sassari,15.88,15.88,15.88,overcast clouds,69,1.55,2025-02-19 16:45:02
+Bari,10.28,9.93,11.14,scattered clouds,64,3.58,2025-02-19 16:45:02
+Lecce,9.94,9.92,9.94,scattered clouds,62,4.63,2025-02-19 16:45:02
+Naples,14.28,13.9,14.51,scattered clouds,55,2.06,2025-02-19 16:45:02
+Rome,10.2,8.4,11.96,light intensity drizzle,85,3.09,2025-02-19 16:45:02
+Milan,5.29,4.82,5.64,overcast clouds,66,1.54,2025-02-19 16:45:02
+Bologna,5.73,5.58,6.45,scattered clouds,67,2.57,2025-02-19 16:45:02
+Florence,7.16,5.94,7.82,light intensity drizzle,70,1.54,2025-02-19 16:45:02
+Genova,2.59,1.14,5.35,overcast clouds,62,3.58,2025-02-19 16:45:02
+Turin,-0.14,-0.49,0.95,broken clouds,73,1.54,2025-02-19 16:45:02
+Palermo,13.1,12.11,13.1,overcast clouds,77,1.52,2025-02-19 17:00:02
+Catania,12.25,10.96,13.88,broken clouds,89,3.6,2025-02-19 17:00:02
+Cagliari,15.89,15.49,17.05,few clouds,73,6.69,2025-02-19 17:00:02
+Sassari,15.88,15.88,17.71,overcast clouds,69,1.55,2025-02-19 17:00:02
+Bari,10.13,9.93,11.14,scattered clouds,64,3.13,2025-02-19 17:00:02
+Lecce,9.94,9.92,9.94,scattered clouds,62,4.63,2025-02-19 17:00:02
+Naples,14.13,13.9,14.34,scattered clouds,56,2.06,2025-02-19 17:00:02
+Rome,10.71,9.58,11.58,scattered clouds,82,2.57,2025-02-19 17:00:02
+Milan,5.27,4.53,5.64,overcast clouds,67,1.54,2025-02-19 17:00:02
+Bologna,5.68,5.14,6.05,scattered clouds,67,2.57,2025-02-19 17:00:02
+Florence,7.02,5.94,7.82,light intensity drizzle,71,1.54,2025-02-19 17:00:02
+Genova,2.59,1.14,4.8,overcast clouds,62,4.47,2025-02-19 17:00:02
+Turin,-0.19,-0.49,1.16,overcast clouds,77,1.26,2025-02-19 17:00:02
