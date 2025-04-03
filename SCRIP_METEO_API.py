@@ -14,14 +14,14 @@ giorno = data_time_stamp.day
 def clean_city_name(city):
     if pd.notna(city) and ('Provincia' in city or 'Province' in city):
         parts = city.split(' ')
-        if len(parts) > 2:  # Assicurati che ci sia una terza parte disponibile
+        if len(parts) > 2:
             return parts[2]
     return city
 
-# Definisci il percorso della directory
+# Path
 folder_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}")
 
-# Verifica se la cartella esiste
+# Verifico se la cartella esiste
 if not folder_path.exists():
     folder_path.mkdir(parents=True, exist_ok=True)  # Crea la directory se non esiste
     print(f"Cartella creata: {folder_path}")
