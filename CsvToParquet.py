@@ -21,18 +21,26 @@ else:
 
 root_dir = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/")  # Percorso della cartella principale
 
-dataframe = {} # Diz per lo storage
+# dataframe = {} # Diz per lo storage
+
+dataframe = [] # Lista per lo storage
 
 # Itera attraverso tutte le sotto-cartelle e i file
-for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutte le cartelle i file in esse contenuti
+# for i, file_path in enumerate(root_dir.rglob("*")):  # * indica tutte le cartelle i file in esse contenuti
+
+for file_path in root_dir.rglob("*"):  # * indica tutte le cartelle i file in esse contenuti
     if file_path.is_file() and file_path.suffix == '.csv':  # Verifica che sia un file CSV
         print(f"Caricando il file: {file_path}")
         
         # Leggi il file CSV in un DataFrame
         df_pd = pd.read_csv(file_path, low_memory=False)
 
+        dataframe.append(df_pd)
+
         # Aggiungi il DataFrame al dizionario con una chiave unica
-        dataframe[f"df_{i+1}"] = df_pd
+        #dataframe[f"df_{i+1}"] = df_pd
+
+#df_final = pd.concat(dataframe)  # Unione dei dataframe creati in precedenza in un unico DF
 
 df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 

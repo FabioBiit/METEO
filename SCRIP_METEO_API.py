@@ -44,9 +44,13 @@ citta = [
     "torino"
     ]
 
-dataframe = {} # Dizionario per i dataframe
+#dataframe = {} # Dizionario per i dataframe
 
-for i, city in enumerate(citta):
+dataframe = [] # Lista per i dataframe
+
+#for i, city in enumerate(citta):
+
+for city in citta:
 
     citta_str = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=d772ae99953d3504ba931841f8bd77da&units=metric"
 
@@ -69,18 +73,22 @@ for i, city in enumerate(citta):
             'Time' : data_time_stamp
         }
     
-        df_pd = pd.DataFrame([dati])
-        dataframe[f'df_{i+1}'] = df_pd
+        dataframe.append(dati) # Aggiungo i dati alla lista
+
+        #df_pd = pd.DataFrame([dati])
+        #dataframe[f'df_{i+1}'] = df_pd
 
     else:
         print("Failed to retrieve data from the API. Status code:", response.status_code)
 
-df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
+df_final = pd.DataFrame(dataframe) # Converto la lista in un dataframe
+
+#df_final = pd.concat(dataframe, ignore_index=True).drop_duplicates() # Unione dei dataframe creati in precedenza in un unico DF
 
 # Applica la funzione alla colonna 'City'
 df_final['City'] = df_final['City'].apply(clean_city_name)
 
-# print(df_final)
+print(df_final)
 
 file_path = Path(f"C:/Users/kyros/OneDrive/Desktop/METEO/STORICO_ROW_CSV/{anno}/{mese}/{giorno}/Meteo_{anno}_{mese}_{giorno}.csv")
 
