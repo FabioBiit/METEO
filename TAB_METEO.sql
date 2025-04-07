@@ -16,7 +16,6 @@ CREATE TABLE REPORT_METEO_SEDI (
     Time DATETIME,                       
     
     PRIMARY KEY (City, Time),            -- Chiave primaria composta da 'City' e 'Time'
-    FOREIGN KEY (City) REFERENCES Citta(NomeCitta) -- Chiave esterna che fa riferimento alla tabella 'Citta' se necessaria
 );
 
 -- QUERY SQL
